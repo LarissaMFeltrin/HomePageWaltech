@@ -1,10 +1,9 @@
 services:
   - type: web
     name: waltech
-    env: php
+    env: docker
     plan: free
-    buildCommand: "./build.sh"
-    startCommand: "heroku-php-apache2 public/"
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: APP_KEY
         generateValue: true
@@ -12,6 +11,8 @@ services:
         value: production
       - key: APP_DEBUG
         value: false
+      - key: APP_URL
+        value: https://waltech.onrender.com
       - key: LOG_CHANNEL
         value: stderr
       - key: SESSION_DRIVER
