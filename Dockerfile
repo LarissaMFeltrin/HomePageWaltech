@@ -61,7 +61,11 @@ RUN chown -R www-data:www-data storage bootstrap/cache \
 # Build assets
 RUN npm ci && npm run build && npm cache clean --force && rm -rf node_modules
 
+# Copiar e configurar entrypoint
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
 # Expor porta
 EXPOSE 80
 
-CMD ["apache2-foreground"]
+ENTRYPOINT ["docker-entrypoint.sh"]
