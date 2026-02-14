@@ -33,29 +33,26 @@ RUN a2enmod rewrite headers
 # Definir diretório de trabalho
 WORKDIR /var/www/html
 
-# Copiar composer files primeiro (para cache)
-COPY composer.json composer.lock ./
-
-# Instalar dependências do Composer
-RUN composer install --no-dev --no-scripts --no-autoloader --prefer-dist
-
-# Copiar o resto dos arquivos
+# Copiar todos os arquivos do projeto
 COPY . .
 
-# Finalizar instalação do Composer
-RUN composer dump-autoload --optimize --no-dev
+# Criar .env se não existir (para composer scripts)
+RUN if [ ! -f .env ]; then cp .env.example .env; fi
 
-# Criar diretórios necessários
+# Criar diretórios necessários ANTES do composer install
 RUN mkdir -p storage/framework/{sessions,views,cache} \
     && mkdir -p storage/logs \
     && mkdir -p bootstrap/cache
 
-# Configurar permissões
+# Configurar permissões ANTES do composer
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
+# Instalar dependências do Composer
+RUN COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --optimize-autoloader --no-interaction
+
 # Instalar dependências do Node e build
-RUN npm ci --only=production
+RUN npm ci
 RUN npm run build
 
 # Limpar cache do npm
