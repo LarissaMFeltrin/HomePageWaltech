@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: waltech
+    env: php
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "heroku-php-apache2 public/"
+    envVars:
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: SESSION_DRIVER
+        value: file
