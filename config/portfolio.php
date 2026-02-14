@@ -47,7 +47,7 @@ return [
         'Chiquinho Sorvetes',
         'Mercado Diamante',
         'Amigão Supermercado',
-        'Top Tawayer',
+        'Top Taylor',
         'Refrimate',
         'Gelopar',
         'Hoshizaki',
@@ -57,8 +57,8 @@ return [
     ],
 
     'contact' => [
-        'email' => 'contato@waltech.com.br',
-        'phone' => '(00) 0000-0000',
+        'email' => 'wallace_proj@outlook.com.br',
+        'phone' => '(44) 99835-5403',
     ],
 
     'sections' => [
