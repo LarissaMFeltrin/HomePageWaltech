@@ -1,6 +1,8 @@
 .git
 .env
-.env.*
+.env.local
+.env.*.php
+.env.backup
 node_modules
 vendor
 storage/logs/*
@@ -8,3 +10,7 @@ storage/framework/cache/*
 storage/framework/sessions/*
 storage/framework/views/*
 .phpunit.result.cache
+tests/
+.editorconfig
+.gitignore
+.gitattributes
