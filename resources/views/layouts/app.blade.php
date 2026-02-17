@@ -27,9 +27,9 @@
     <nav class="fixed top-0 w-full bg-portfolio-dark/95 backdrop-blur-md border-b border-slate-700/50 z-50 transition-all duration-300"
         id="navbar">
         <div class="container-custom">
-            <div class="flex items-center justify-between h-16 md:h-20">
+            <div class="flex items-center justify-between h-20 md:h-24">
                 <a href="{{ route('home') }}" class="flex items-center space-x-2">
-                    <img src="{{ asset('images/logopequena.png') }}" alt="WALTECH" class="h-12 md:h-16 lg:h-20 w-auto">
+                    <img src="{{ asset('images/logowalrwch3.png') }}" alt="WALTECH" class="h-14 md:h-16 w-auto">
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home"
@@ -73,7 +73,7 @@
         <div class="container-custom section-padding">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <img src="{{ asset('images/logopequena.png') }}" alt="WALTECH" class="h-16 md:h-20 mb-4">
+                    <img src="{{ asset('images/logowalrwch3.png') }}" alt="WALTECH" class="h-24 md:h-28 mb-4">
                     <p class="text-slate-400">{{ config('portfolio.company.tagline', 'Soluções tecnológicas') }}</p>
                 </div>
                 <div>
