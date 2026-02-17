@@ -8,7 +8,13 @@
         content="{{ config('portfolio.company.name', 'WALTECH') }} - {{ config('portfolio.company.tagline', 'Soluções tecnológicas') }}">
     <title>@yield('title')</title>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @if(file_exists(public_path('hot')))
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @else
+        <link rel="stylesheet" href="{{ asset('build/assets/app-CQpLkbza.css') }}">
+        <script src="{{ asset('build/assets/app-7wL9b_hj.js') }}"></script>
+        <style>.fade-in-on-scroll{opacity:1!important;transform:none!important;}</style>
+    @endif
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
