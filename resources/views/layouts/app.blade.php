@@ -2,10 +2,19 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M8JWJHXD');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="{{ config('portfolio.company.name', 'WALTECH') }} - {{ config('portfolio.company.tagline', 'Soluções tecnológicas') }}">
+        content="WALTECH - Manutenção de freezer, câmara fria, ar condicionado, máquina de sorvete, fritadeira e equipamentos de refrigeração para restaurantes e fast foods no Paraná, Santa Catarina, São Paulo e Mato Grosso.">
+    <meta name="keywords" content="manutenção freezer vertical, manutenção freezer horizontal, manutenção câmara fria, manutenção câmara de congelados, manutenção pista fria, manutenção expositor, manutenção geladeiras, manutenção ar condicionado, manutenção chiller de resfriamento, manutenção torre de bebida birco, manutenção bebida multiplex, manutenção máquina de sorvete Taylor C712, manutenção máquina de sorvete Taylor C716, manutenção fritadeira flymaster, manutenção fritadeira henny penny, manutenção fritadeira lov, manutenção fritadeira tedesco, manutenção estufa flymaster, manutenção estufa henny penny, manutenção máquina de sorvete italianinha, manutenção máquina de sorvete tecsoft, manutenção máquina de sorvete Elgin, manutenção máquina de sorvete logrosoft, manutenção túnel de congelamento, refrigeração comercial, refrigeração industrial, restaurantes, fast food, Paraná, Santa Catarina, São Paulo, Mato Grosso">
     <title>@yield('title')</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -14,9 +23,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Schema.org - Dados Estruturados -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "WALTECH Refrigeração",
+        "description": "Manutenção e assistência técnica em equipamentos de refrigeração comercial e industrial para restaurantes e fast foods.",
+        "url": "https://waltechrefrigera.com.br",
+        "telephone": "+5544998355403",
+        "email": "wallace_proj@outlook.com.br",
+        "areaServed": [
+            { "@type": "State", "name": "Paraná" },
+            { "@type": "State", "name": "Santa Catarina" },
+            { "@type": "State", "name": "São Paulo" },
+            { "@type": "State", "name": "Mato Grosso" }
+        ],
+        "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "Restaurantes e Fast Foods"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços de Manutenção",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de freezer vertical" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de freezer horizontal" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de câmara fria" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de câmara de congelados" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de pista fria" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de expositor" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de geladeiras" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de ar condicionado" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de chiller de resfriamento" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de torre de bebida Birco" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de bebida Multiplex" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de máquina de sorvete Taylor C712" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de máquina de sorvete Taylor C716" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de fritadeira Flymaster" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de fritadeira Henny Penny" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de fritadeira LOV" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de fritadeira Tedesco" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de estufa Flymaster" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de estufa Henny Penny" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de máquina de sorvete Italianinha" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de máquina de sorvete Tecsoft" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de máquina de sorvete Elgin" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de máquina de sorvete Logrosoft" }},
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manutenção de túnel de congelamento" }}
+            ]
+        }
+    }
+    </script>
 </head>
 
 <body class="bg-portfolio-dark text-slate-100 font-sans antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8JWJHXD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Navigation - estilo portfolio -->
     <nav class="fixed top-0 w-full bg-portfolio-dark/95 backdrop-blur-md border-b border-slate-700/50 z-50 transition-all duration-300"
         id="navbar">

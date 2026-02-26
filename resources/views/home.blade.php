@@ -11,7 +11,7 @@
 @endphp
 @extends('layouts.app')
 
-@section('title', ($company['name'] ?? 'WALTECH') . ' ' . ($company['tagline'] ?? 'Serviços Técnicos') . ' – Refrigeração')
+@section('title', 'WALTECH Refrigeração – Manutenção de Freezer, Câmara Fria, Ar Condicionado e Máquinas para Restaurantes | PR, SC, SP, MT')
 
 @section('content')
     <!-- Hero -->
